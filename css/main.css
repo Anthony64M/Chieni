@@ -647,7 +647,7 @@ button[class ^= navbar]:hover{
     margin-top: 5rem;
 }
 .form-element .form-control{
-    width: 400px;
+    width: 300px;
     background-color: #3373dd;
     border: none;
     outline: 0;
