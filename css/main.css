@@ -330,7 +330,7 @@ button[class ^= navbar]:hover{
 }
 .about-right .img{
     width: 100%;
-    background-color: #3983fe;
+    /* background-color: #3983fe; */
     max-width: 537px;
     position: relative;
 }
@@ -349,13 +349,13 @@ button[class ^= navbar]:hover{
 .about-right .img::after{
     top: -56px;
     left: 0;
-    background-color: #0060ff;
+    /* background-color: #0060ff; */
     z-index: -1;
 }
 .about-right .img::before{
     top: -112px;
     left: 0;
-    background-color: var(--fros-blue-color);
+    /* background-color: var(--fros-blue-color); */
     z-index: -2;
 }
 
@@ -424,6 +424,7 @@ button[class ^= navbar]:hover{
 }
 
 /* banner two section */
+
 .banner-two{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-two-bg.png') top/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
@@ -846,24 +847,24 @@ button[class ^= navbar]:hover{
                 column-gap: 3rem;
     }
     .about-left{
-        text-align: left;
+        text-align: right;
         margin-bottom: 0;
     }
     .about-left .section-head h2{
-        text-align: left;
+        text-align: right;
     }
     .border-line{
-        margin-left: 0;
+        margin-right: 0;
     }
     .border-line::after{
-        left: 0;
+        right: 0;
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
                 transform: translateX(0);
     }
-    .about-right{
-        margin-left: auto;
+    .about-left{
         margin-top: 11.2rem;
+        text-align: right;
     }
 
     .banner-two .container{
