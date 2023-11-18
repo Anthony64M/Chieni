@@ -157,6 +157,7 @@ h1, h2, h3{
     min-height: 100vh;
 }
 .navbar{
+    background-color:#fff;
     opacity: 0.7;
     position: fixed;
     top: 0;
@@ -164,6 +165,8 @@ h1, h2, h3{
     width: 100%;
     padding: 3.2rem 0;
     z-index: 999;
+    color: #195069 !important;
+
 }
 .navbar .container{
     -webkit-box-pack: justify;
@@ -173,6 +176,8 @@ h1, h2, h3{
 .navbar-brand img{
     width: 170px;
     display: flex;
+    color: #195069 !important; 
+
 }
 .navbar-show-btn, .navbar-hide-btn{
     background-color: transparent;
@@ -228,6 +233,7 @@ button[class ^= navbar]:hover{
 }
 .nav-item{
     margin: 1.4rem 0;
+    color: #195069 !important;
 }
 .nav-link{
     opacity: 0.8;
@@ -236,10 +242,12 @@ button[class ^= navbar]:hover{
     -o-transition: var(--transition);
     transition: var(--transition);
     display: inline-block;
+    color: #195069 !important;
+
 }
 .nav-link:hover{
+    color: #195069 !important;
     opacity: 1;
-    color: var(--fros-blue-color);
     -webkit-transform: translateX(10px);
         -ms-transform: translateX(10px);
             transform: translateX(10px);
@@ -936,6 +944,7 @@ button[class ^= navbar]:hover{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        color: #195069;
     }
     .nav-item{
         margin: 0;
