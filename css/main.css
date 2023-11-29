@@ -372,7 +372,9 @@ button[class ^= navbar]:hover{
 
   }
 #distro{
-    display:grid;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     min-block-size: 100vh;
     place-content: center;
     font-family: system-ui;
@@ -384,13 +386,22 @@ button[class ^= navbar]:hover{
     --clr-primary-800: hsl(217, 33%, 17%);
     --clr-primary-900: hsl(218, 33%, 9%);
 }
+.section-head {
+    text-align: center;
+  }
 .scroller {
     max-width: 600px;
     justify-content: center;
     display: flex; 
     align-items: center;
+    /* margin: 0 auto; */
   }
-  
+  .border-line {
+    margin: 0 auto !important; 
+  }
+  .banner-two-right {
+    text-align: center !important;
+  }
   .scroller__inner {
     padding-block: 1rem;
     display: flex;
@@ -465,7 +476,37 @@ button[class ^= navbar]:hover{
   .test {
     background: red !important;
   }
+  @media (max-width: 767.98px) {
 
+    #distro {
+      padding: 20px;
+    }
+    
+    .scroller {
+      max-width: 90%;
+    }
+  
+    .banner-two-right {
+      font-size: 14px;
+    }
+    
+  }
+  
+  /* Smaller than 576px */
+  @media (max-width: 575.98px) {
+  
+    #distro {
+      padding: 10px;
+    }
+  
+    .scroller {
+      flex-direction: column;
+    }
+  
+    .scroller__inner { 
+      flex-wrap: nowrap;
+    }
+  }
 /* banner one section */
 .banner-one{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-1-img.png') top/cover no-repeat;
@@ -531,26 +572,37 @@ button[class ^= navbar]:hover{
 }
 
 /* banner two section */
-
-.banner-two{
+.banner-two {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-two-bg.png') top/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
     background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
     padding: 13.6rem 0;
 }
-.banner-two-left img{
-    max-width: 620px;
-    margin: auto;
-}
-.banner-two-right .lead{
+
+.banner-two-right .lead {
     font-size: 2.2rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
-.banner-two-right .btn-group{
+
+.banner-two-right {
     margin-top: 6rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add this new CSS rule to center the content within the grid */
+.grid-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Optional: Add a max-width to the container to prevent it from stretching too wide */
+.container-two {
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 /* corporate panel */
@@ -1028,6 +1080,9 @@ button[class ^= navbar]:hover{
         -webkit-column-gap: 3rem;
            -moz-column-gap: 3rem;
                 column-gap: 3rem;
+    }
+    .about .py{
+        background-color: #fff;
     }
     .about-left{
         text-align: right;
