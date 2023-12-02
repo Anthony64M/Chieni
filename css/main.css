@@ -618,6 +618,13 @@ button[class ^= navbar]:hover{
   #doc-panel h1 {
     text-align: center;
   } 
+  .card {
+    transition: box-shadow 0.5s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 20px rgba(33,33,33,0.2);
+  }
   
   .container-panel {
     max-width: 1000px;
@@ -718,13 +725,11 @@ button[class ^= navbar]:hover{
   }
 
 /* package service */
-.package-service-inner{
-    margin-top: 14rem;
-}
+
 .package-service{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.85)), to(rgba(0, 80, 213, 0.95))), url('../images/package-service-img.jpg') center/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
-    background: linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.85)), to(rgba(0, 80, 213, 0.95))),  center/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)),  center/cover no-repeat;
+    background: linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)),  center/cover no-repeat;
 }
 .package-service-head{
     color: var(--light-color);
@@ -1136,7 +1141,7 @@ button[class ^= navbar]:hover{
         margin-bottom: 0;
     }
     .package-service-inner{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .package-service-item{
         margin-bottom: 0;
